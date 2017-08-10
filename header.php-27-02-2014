@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="user-scalable = yes">
+<title>
+<?php wp_title('|', true, 'right'); ?>
+<?php bloginfo('name'); ?>
+</title>
+<!--[if lt IE 9]>
+
+<script type="text/javascript" src="<?php echo THEME_URI; ?>js/html5.js"></script>
+
+<![endif]-->
+
+<?php wp_head(); ?>
+<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_directory').'/custom.css';?>">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="<?php echo bloginfo('template_directory');?>/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="<?php echo bloginfo('template_directory');?>/fancybox/source/jquery.fancybox.pack.js" defer></script>
+<script type="text/javascript" src="<?php echo bloginfo('template_directory');?>/fancybox/source/jquery.fancybox.js" defer></script>
+<script src="<?php echo bloginfo('template_directory');?>/custom_slider/jquery.bxslider.min.js"></script>
+<link href="<?php echo bloginfo('template_directory');?>/custom_slider/jquery.bxslider.css" rel="stylesheet" />
+<script type="text/javascript">
+ var $j = jQuery.noConflict(); 
+$j(document).ready(function() {
+
+/*  for fancybox  */
+
+ $j(".fancybox").fancybox({ arrows : false });  
+ $j('.bxslider').bxSlider({
+ mode: 'vertical',
+ slideMargin: 5,
+infiniteLoop: false,
+hideControlOnEnd: true
+});   
+});
+
+</script>
+
+<script type="text/javascript">
+
+var fb_param = {};
+fb_param.pixel_id = '6009643839431';
+fb_param.value = '0.00';
+fb_param.currency = 'USD';
+(function(){
+  var fpw = document.createElement('script');
+  fpw.async = true;
+  fpw.src = '//connect.facebook.net/en_US/fp.js';
+  var ref = document.getElementsByTagName('script')[0];
+  ref.parentNode.insertBefore(fpw, ref);
+
+})();
+
+</script>
+<noscript>
+<img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6009643839431&amp;value=0&amp;currency=USD" />
+</noscript>
+</head>
+<body <?php body_class(); ?>>
+<div class="site-wrap">
+<div class="header-wrap">
+  <header class="site-header">
+    <div class="row">
+      <div class="site-logo left">
+        <?php ThemexStyler::siteLogo(); ?>
+      </div>
+      
+      <!-- /logo -->      
+      <div class="header-options right clearfix">         
+        <!-- /search form -->
+        <?php if($share_code=ThemexCore::getOption('share_code')) { ?>
+        <div class="button-wrap share-button tooltip right"> <a href="#" class="button dark"><span><span class="button-icon plus nomargin"></span></span></a>
+          <div class="tooltip-wrap">
+            <div class="corner"></div>
+            <div class="tooltip-text"><?php echo themex_html($share_code); ?></div>
+          </div>
+        </div>
+        <!-- /share button -->
+        <?php } ?>
+      </div>
+      
+      <!-- /header options -->
+      <div class="mobile-search-form">
+        <?php get_search_form(); ?>
+      </div>
+      
+      <!-- /mobile search form -->       
+      <!-- social icons -->      
+      <div class="twocol right">
+        <div class="social_icons">           
+          <!-- AddThis Button END -->           
+          <a href="<?php echo $student_signin_url=ThemexCore::getOption('fb_url');?>"> <img src="<?php echo site_url();?>/wp-content/uploads/2013/07/facebook_icon_by_x_1337_x-d5ikwkm.png" width="26" height="26" /> </a> <a href="<?php echo $student_signin_url=ThemexCore::getOption('tw_url');?>"> <img src="<?php echo site_url();?>/wp-content/uploads/2013/07/728567main_twitter-icon.png" width="26" height="26" /> </a> <a href="<?php echo $student_signin_url=ThemexCore::getOption('link_url');?>"> <img src="<?php echo site_url();?>/wp-content/uploads/2013/07/linkedin-logo.png" width="26" height="26" /> </a> <a href="<?php echo $student_signin_url=ThemexCore::getOption('google_url');?>"> <img src="<?php echo site_url();?>/wp-content/uploads/2013/07/google.jpg" width="26" height="26" /> </a> </div>
+      </div>
+      
+      <!-- /social icons  -->      
+      <div class="fourcol right">
+        <div class="signin"> <a class="button new" target="_blank" href="<?php echo $student_signin_url=ThemexCore::getOption('student_signin_url');?>"><span class="wid">Student sign in</span></a> <a class="button new" target="_blank" href="<?php echo $admin_signin_url=ThemexCore::getOption('admin_signin_url');?>"><span class="wid">Faculty/Admin sign in</span></a> </div>
+      </div>
+      <br clear="all"/>
+      <nav class="header-navigation right">
+        <?php wp_nav_menu( array( 'theme_location' => 'main_menu','container_class' => 'menu' ) ); ?>
+        <div class="select-menu">
+          <?php ThemexInterface::renderDropdownMenu('main_menu'); ?>
+          <span>&nbsp;</span> </div>
+        <!--/ select menu-->         
+      </nav>      
+      <!-- /navigation -->       
+    </div>
+  </header>  
+  <!-- /header -->   
+</div>
+<div class="featured-content">
+  <?php 
+
+ThemexStyler::pageBackground();
+if(is_front_page() && !ThemexUser::isLoginPage()) {
+get_template_part('module','slider');
+} else {
+
+			?>
+  <div class="row">
+    <?php
+
+			if(get_post_type()=='course' && is_single()) {
+
+				get_template_part('module','course');
+
+			} else {
+
+			?>
+    <div class="page-title">
+      <h1 class="nomargin">
+        <?php ThemexStyler::pageTitle(); ?>
+      </h1>
+      <?php if(is_category(11)){?>
+      <?php $img_src = categoryCustomFields_GetCategoryCustomField(11,'cat_img'); ?>
+      <div class="column fivecol"> <img src="<?php echo $img_src[0]->field_value;?>" alt=""> </div>
+      <div class="column  sevencol last" >
+        <div class="employer-description widget employer">
+          <div class="widget-title">
+            <div class="headertitle">Hire pre-trained employees</div>
+          </div>
+          <div class="widget-content"> <?php echo category_description(); ?>
+            <footer class="course-footer"> </footer>
+          </div>
+        </div>
+      </div>
+      <?php } ?>
+    </div>    
+    <!-- /page title -->    
+    <?php }	?>
+  </div>
+  <?php } ?>
+</div>
+<!-- /featured -->
+<div class="main-content">
+<div class="row">

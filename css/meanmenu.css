@@ -1,0 +1,134 @@
+
+
+/* #######################################################################
+
+	meanMenu
+	--------
+	
+	To be used with jquery.meanmenu.js by Chris Wharton (http://www.meanthemes.com/plugins/meanmenu/)
+
+####################################################################### */
+
+/* hide the link until viewport size is reached */
+a.meanmenu-reveal {
+display: none; outline:none;
+}
+
+/* when under viewport size, .mean-container is added to body */
+.mean-container .mean-bar { 
+float: left;
+width: auto;
+position:absolute;
+padding: 0px 0;
+min-height: 42px;
+height:45px;
+z-index: 999999;
+margin-top:0px;
+margin-bottom:0px;
+right:0px;
+top:0px;
+}
+.mean-container a.meanmenu-reveal {
+width: 43px;
+height: 43px;
+padding: 12px 13px 11px 13px;
+top: 0;
+right: 0;
+cursor: pointer;
+color: #888;
+text-decoration: none;
+font-size: 16px;
+text-indent: -9999em;
+line-height: 22px;
+font-size: 1px;
+display: block;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
+margin-top: -4px;
+}
+.mean-container a.meanmenu-reveal span {
+    background: #888888 none repeat scroll 0 0;
+    display: block;
+    height: 3px;
+    margin-top: 3px;
+}
+.mean-container .mean-nav {
+    background: #20B9FF none repeat scroll 0 0;
+    float: left;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.mean-container .mean-nav ul {
+padding: 0;
+margin: 0;
+width: 100%;
+list-style-type: none;
+}
+.mean-container .mean-nav ul li {
+position: relative;
+float: left;
+width: 100%;
+margin-bottom:0px;
+}
+.mean-container .mean-nav ul li a {
+display: block;
+float: left;
+width: 100%;
+padding:8px 15px 9px;
+margin: 0;
+text-align: left;
+color: #fff;
+border-bottom: 1px solid #383838;
+border-bottom: 1px solid rgba(255,255,255,0.5);
+text-decoration: none; outline:none;
+font-size:15px;
+}
+
+.mean-container .mean-nav ul li li a {
+width: 86%;
+padding: 0.6em 7%;
+border-bottom: 1px solid #f1f1f1;
+border-bottom: 1px solid rgba(255,255,255,0.25);
+opacity: 1; 
+filter: alpha(opacity=75);
+text-shadow: none !important;
+visibility: visible;
+}
+.mean-container .mean-nav ul li.mean-last a {
+border-bottom: none;
+margin-bottom: 0;
+}
+.mean-container .mean-nav ul li li li a {
+width: 70%;
+padding: 1em 15%;
+}
+.mean-container .mean-nav ul li li li li a {
+width: 60%;
+padding: 1em 20%;
+}
+.mean-container .mean-nav ul li li li li li a {
+width: 50%;
+padding: 1em 25%;
+}
+.mean-container .mean-nav ul li a:hover { 
+ background: none;    color: #fff!important;
+}
+.mean-container .mean-nav ul li a.mean-expand {    border: none!important;    font-weight: 700;    height: 38px;    padding: 6px 12px!important;    position: absolute;    right: 0;    text-align: center;    top: 0;    width: 33px;    z-index: 2;}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+background: #none;
+}
+
+.mean-container .mean-push { 
+float: left;
+width: 100%;
+padding: 0;
+margin: 0;
+clear: both; 
+}
+.mean-nav .wrapper {
+width: 100%;
+padding: 0;
+margin: 0;
+}
+.mean-container .mean-nav ul li.current-menu-item a {background: #ffffff none repeat scroll 0 0;color: #0b97d7;}
+

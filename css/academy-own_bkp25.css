@@ -1,0 +1,300 @@
+body{font-family: '"Nunito",sans-serif;', sans-serif!important;}
+.menu {
+    margin-top: 30px;
+}
+.tp-caption.rev-btn.rs-hover-ready {
+    background: #f9a03f!important;
+}
+.tp-caption.rev-btn.rs-hover-ready a {
+    color: #fff!important;
+	font-weight:800;
+	font-size:15px !important;
+}
+.tp-caption.tp-shape.tp-shapewrapper.tp-resizeme {
+    background: #20b9ff none repeat scroll 0 0!important;
+}
+.header-navigation div > ul > li:last-child {
+    background: #20b9ff none repeat scroll 0 0;
+    border-radius: 20px;
+    padding-bottom: 0;
+}
+.header-navigation div > ul > li:last-child a {
+    color:#fff;
+}
+.banner-bottom li {
+    display: inline-block;
+    list-style: outside none none;
+    padding: 0 50px;
+    width: auto;
+}
+.banner-bottom > ul {
+    float: none;
+    text-align: center;
+}
+.div-botm-img {
+    float: left;
+}
+.rank-dv{
+    float: left;
+    margin-left: 15px;
+    margin-top: 8px;
+    text-align: left;
+}
+.banner-bottom {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px #dddddd;
+    margin-top: -135px;
+    padding: 20px 0;
+}
+.section-hdg {
+    text-align: center;
+	font-family: '"Nunito",sans-serif;', sans-serif !important;
+	margin:50px 0px;
+}
+.section-hdg > p {
+    color: #403737;
+    font-family: "Nunito",sans-serif;
+    font-weight: 600;
+    line-height: 18px;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+    font-size: 15px;
+}
+.section-hdg h1 {
+    font-family: Nunito,sans-serif,sans-serif;
+    font-size: 36px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+	color:#403737;
+}
+.border-new {
+    background: #20b9ff;
+    width: 70px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 12px auto 15px;
+}
+.spcl-img img{ width:100%;}
+.specl-div {
+    background: #f5f5f5 none repeat scroll 0 0;  padding:15px; margin-bottom: 50px;
+}
+.specl-div h3 {
+    color: #0b0909;
+    font-family: Nunito,sans-serif,sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 8px;
+    text-align: center;
+	word-wrap: break-word;
+	font-weight: 600;
+}
+.specl-div p{ color: #353434;font-family: "Nunito",sans-serif;",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+.see-more {
+    float: none;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.see-more > a {
+    background: #f9a03f none repeat scroll 0 0;
+    border: 1px solid #f58220;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 8px 34px;
+    box-shadow: 0px 1px 1px #888;
+	display: inline-block;
+}
+.see-more > a:hover{ color:#fff;}
+.view-full img {
+    margin: 0 auto;
+    text-align: center;
+    width: 160px;
+}
+.view-full {
+    text-align: center;
+}
+.advicer-cn {
+    background: #20b9ff none repeat scroll 0 0;
+    margin: 3% 0 3%;
+    padding: 60px 40px!important;
+}
+.advicerimg {
+    padding: 0!important;
+}
+.advicer-cn p {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 300;
+}
+.starrating .glyphicon.glyphicon-star {
+    color: #20b9ff;
+    margin: 0 2px;
+}
+.starrating .glyphicon.glyphicon-star-empty {
+    color: #888888;
+    margin: 0 2px;
+}
+.ind-cours img {
+    width: 100%;
+}
+.indvlcontent {
+    background: #faf9f9 none repeat scroll 0 0;
+    border-bottom: 3px solid #58caff;
+    padding: 24px 24px 15px;
+    text-align: center;
+}
+.starrating {
+    margin-bottom: 8px;
+}
+.users-foll {
+    color: #929292;
+    font-weight: 300;
+    margin-bottom: 13px;
+}
+.indvlcontent h4 {
+    font-family: "Nunito",sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+.indvlcontent > p {
+    color: #585050;
+    font-weight: 300;
+    text-align: center;
+}
+.couser-sub-hd {
+    font-family: "Nunito",sans-serif;",sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.ind-cours {
+    margin-bottom: 30px;
+}
+.hover-course{ display:none;}
+.indvlcontent:hover .hover-course{ display:block;}
+.succes-story {
+    background: #f3f3f3 none repeat scroll 0 0;
+    padding-bottom: 50px;
+}
+.storybd{
+    border-left: 500px solid rgba(0, 0, 0, 0);
+    border-top: 48px solid #ffffff;
+    margin-left: 15%;
+}
+.succes-div img {
+    float: left;
+    margin-top: 20px;
+    position: relative;
+    z-index: 99999999;
+	margin-right:15px;
+	width:50%;
+}
+.advicerimg img {
+    min-height: 342px;
+}
+.advicerimg.fiote-img img {
+    min-height: 365px;
+}
+.content-succs {
+    background: #ffffff none repeat scroll 0 0;
+    margin-left: 15%;
+    padding: 25px 15px;
+    position: relative;
+    z-index: 11111111;
+}
+.succes-div {
+    overflow: hidden;
+}
+.imgsuccs img {
+    margin-right: 15px;
+}
+.content-succs a {
+    color: #f9a03f;
+    font-weight: 500;
+}
+.content-succs > p {
+    font-weight: 300;
+}
+.content-succs h5 {
+    margin-bottom: 0;
+    font-family: "Nunito",sans-serif;
+}
+.clients-list > ul {
+    list-style: none;
+    float: none;
+	text-align:center;
+}
+.clients-list li {
+    display: inline-block;
+    padding: 0 25px;
+    text-align: center;
+    vertical-align: middle;
+}
+.offers-section {
+    background: #f3f3f3 none repeat scroll 0 0;
+    padding: 30px 0;
+    text-align: center;
+}
+.work-section img {
+    height: 120px;
+    margin: 0 auto;
+    text-align: center;
+    width: 130px;
+}
+.work-section > h4 {
+    color: #403737;
+    font-family: "Nunito",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.work-section > p {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+.footer-wrap{}
+.address-dv p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.bootom-links ul {
+    list-style: none;
+    padding: 0 !important;
+}
+.bootom-links > ul li a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+.socila-links h5 {
+    font-family: nunito;
+    font-size: 14px;
+    font-weight: 600;
+}
+.socila-links ul{ list-style:none; padding: 0 !important;}
+.socila-links ul li{ display:inline-block; padding:0px 5px;}
+.socila-links ul li:first-child{ padding-left:0px;}
+.footer-new {
+   background: #1b1b1b!important; color: #fff!important;font-family: "Nunito",sans-serif; padding: 40px 0;
+}
+footer.site-footer {
+    background: #000000 none repeat scroll 0 0!important;
+    border: 0 none!important;
+	position:unset!important;
+    overflow: auto;
+    padding: 23px 0;
+}
+.last-foot {
+    float: right;
+    text-align: right;
+}

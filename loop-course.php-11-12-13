@@ -1,0 +1,145 @@
+<?php ThemexCourse::initCourse($post->ID); 
+
+
+
+    $button_link = get_post_meta($post->ID, 'button_link', true);
+
+?>
+
+<?php if(has_post_thumbnail()) { ?>
+
+<div class="course-preview <?php echo ThemexCourse::$data['course']['status']; ?>-course">
+
+  <div class="course-image">  
+
+<div class="coursetitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+
+<?php if(ThemexCourse::$data['rating']!='true' || ThemexCourse::$data['users_number']!='true') { ?>
+
+        
+
+        <footer class="course-footer clearfix">
+
+            <?php if(ThemexCourse::$data['users_number']!='true') { ?>        
+
+            <div class="course-users left">
+
+		<?php if ($post->ID == 230) {echo "75 learners";} ?> 
+
+		<?php if ($post->ID == 222) {echo "110 signups";}?> 
+
+		<?php if ($post->ID == 233){echo "67 signups";}?> 
+
+		</div>
+
+            <?php } ?>
+
+            <?php //if(ThemexCourse::$data['rating']!='true') { ?>
+
+            <?php //get_template_part('module', 'rating'); ?>
+
+            <?php // } ?>
+
+        </footer>
+
+        
+
+        <?php } ?>
+
+
+
+
+
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('normal'); ?></a>
+
+        
+
+        <?php //if(ThemexCourse::$data['course']['price']!='' && !is_single()) { ?>
+
+        <?php //if(empty(ThemexCourse::$data['course']['plans'])) { ?>
+
+        <!--<div class="course-price">
+
+            <div class="corner-wrap">
+
+                <div class="corner"></div>
+
+                <div class="corner-background"></div>
+
+            </div>
+
+            <div class="price-text"><?php //echo ThemexCourse::$data['course']['price']; ?></div>
+
+        </div>-->
+
+        <?php //} ?>
+
+        <?php //} ?>
+
+        
+
+    </div>
+
+    <div class="course-meta">
+
+        <header class="course-header">
+
+
+
+            <div class="coursetitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+
+            <!--<a href="<?php //the_permalink(); //echo ThemexCourse::$data['course']['author']->user_link; ?>" class="author">
+
+                <?php //echo ThemexCourse::$data['course']['author']->full_name; ?>
+
+                <?php //the_excerpt();?>
+
+            </a>-->
+
+            <p><?php the_excerpt();?></p>
+
+                <?php if(!is_single()){
+
+                        if(!is_page(2129)){
+
+                            ?>
+
+                             
+
+                        <a href="<?php echo $button_link;?>" class="button"><span class="wid">Learn More</span></a>
+
+                
+
+                        <?php }else{ 
+
+                            
+
+                            if($post->ID == 230){?>
+
+                                
+
+                            <a href="<?php echo $button_link;?>" class="button"><span class="wid">Learn More</span></a>
+
+                            
+
+                            <?php }else{ ?>
+
+                        
+
+                        
+
+                            <a href="<?php echo $button_link;?>" class="button"><span class="wid">Sign Up</span></a>
+
+                
+
+                        <?php } } } ?>
+
+            
+
+        </header>
+
+       </div>
+
+</div>
+
+<?php } ?>

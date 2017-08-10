@@ -1,0 +1,554 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in echo
+#: academy/module-statistics.php:108
+msgid "Active"
+msgstr ""
+
+#. Text in echo
+#: academy/module-statistics.php:52
+msgid "Active Courses"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/widgets/themex_authors_widget.php:95
+msgid "Activity"
+msgstr ""
+
+#. Text in function
+#: academy/framework/classes/themex.widgetiser.php:1
+msgid "Add Category"
+msgstr ""
+
+#. Text in function
+#: academy/framework/classes/themex.widgetiser.php:1
+msgid "Add Page"
+msgstr ""
+
+#. Text in function
+#: academy/framework/classes/themex.widgetiser.php:1
+msgid "Add Sidebar"
+msgstr ""
+
+#. Text in function
+#: academy/module-statistics.php:66
+msgid "All Students"
+msgstr ""
+
+#. Text in echo
+#: academy/module-attachments.php:3
+msgid "Attachments"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:106
+msgid "Author"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/widgets/themex_authors_widget.php:87
+msgid "Authors Number"
+msgstr ""
+
+#. Text in echo
+#: academy/module-statistics.php:54
+msgid "Average Mark"
+msgstr ""
+
+#. Text in function
+#: academy/framework/widgets/themex_authors_widget.php:1
+msgid "Blog Authors"
+msgstr ""
+
+#. Text in echo
+#: academy/template-certificate.php:4
+msgid "Certificate"
+msgstr ""
+
+#. Text in echo
+#: academy/template-certificate.php:21
+msgid "Certificate not found"
+msgstr ""
+
+#. Text in echo
+#: academy/sidebar-lesson.php:25
+msgid "Close Lesson"
+msgstr ""
+
+#. Text in echo
+#: academy/comments.php:4
+msgid "Comments"
+msgstr ""
+
+#. Text in echo
+#: academy/sidebar-lesson.php:10
+msgid "Complete Quiz"
+msgstr ""
+
+#. Text in echo
+#: academy/module-statistics.php:88
+msgid "Completed"
+msgstr ""
+
+#. Text in echo
+#: academy/module-statistics.php:53
+msgid "Completed Courses"
+msgstr ""
+
+#. Text in echo
+#: academy/module-statistics.php:25
+msgid "Course"
+msgstr ""
+
+#. Text in echo
+#: academy/module-statistics.php:80
+msgid "Courses"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/widgets/themex_authors_widget.php:93
+msgid "Date"
+msgstr ""
+
+#. Text in echo
+#: academy/module-statistics.php:51
+msgid "Date Registered"
+msgstr ""
+
+#. Text in echo
+#: academy/module-course.php:12
+msgid "Description"
+msgstr ""
+
+#. Text in echo
+#: academy/header.php:71
+#: academy/template-register.php:23
+msgid "Email"
+msgstr ""
+
+#. Text in echo
+#: academy/module-player.php:32
+msgid "Exit full screen"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:35
+msgid "Facebook"
+msgstr ""
+
+#. Text in echo
+#: academy/module-statistics.php:62
+msgid "Filter"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:20
+msgid "First Name"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:62
+msgid "Flickr"
+msgstr ""
+
+#. Text in echo
+#: academy/loop-lesson.php:4
+msgid "Free"
+msgstr ""
+
+#. Text in echo
+#: academy/module-player.php:31
+msgid "Full screen"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:46
+msgid "Google"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/extensions/themex-shortcoder/popup.php:27
+msgid "Insert Shortcode"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:25
+msgid "Last Name"
+msgstr ""
+
+#. Text in echo
+#: academy/module-statistics.php:24
+msgid "Lesson"
+msgstr ""
+
+#. Text in echo
+#: academy/single-course.php:5
+#: academy/module-lessons.php:3
+msgid "Lessons"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:57
+msgid "LinkedIn"
+msgstr ""
+
+#. Text in echo
+#: academy/module-statistics.php:26
+#: academy/module-statistics.php:113
+msgid "Mark"
+msgstr ""
+
+#. Text in echo
+#: academy/sidebar-lesson.php:17
+msgid "Mark Complete"
+msgstr ""
+
+#. Text in echo
+#: academy/sidebar-lesson.php:5
+msgid "Mark Incomplete"
+msgstr ""
+
+#. Text in echo
+#: academy/module-player.php:39
+msgid "Mute"
+msgstr ""
+
+#. Text in echo
+#: academy/header.php:33
+msgid "My Profile"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/widgets/themex_authors_widget.php:94
+msgid "Name"
+msgstr ""
+
+#. Text in echo
+#: academy/sidebar-lesson.php:29
+msgid "Next Lesson"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:120
+msgid "No courses yet."
+msgstr ""
+
+#. Text in echo
+#: academy/index.php:28
+msgid "No posts found. Try a different search?"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/widgets/themex_comments_widget.php:71
+msgid "Number of comments to show"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/widgets/themex_authors_widget.php:91
+msgid "Order By"
+msgstr ""
+
+#. Text in echo
+#: academy/woocommerce/checkout/form-billing.php:2
+msgid "Order Details"
+msgstr ""
+
+#. Text in echo
+#: academy/header.php:44
+#: academy/template-register.php:29
+#: academy/template-register.php:65
+msgid "Password"
+msgstr ""
+
+#. Text in echo
+#: academy/header.php:60
+msgid "Password Recovery"
+msgstr ""
+
+#. Text in echo
+#: academy/module-player.php:18
+msgid "Pause"
+msgstr ""
+
+#. Text in echo
+#: academy/module-statistics.php:93
+msgid "Per User"
+msgstr ""
+
+#. Text in echo
+#: academy/module-player.php:11
+#: academy/module-player.php:17
+msgid "Play"
+msgstr ""
+
+#. Text in function
+#: academy/woocommerce/checkout/thankyou.php:27
+msgid "Please attempt your purchase"
+msgstr ""
+
+#. Text in echo
+#: academy/sidebar-lesson.php:32
+msgid "Previous Lesson"
+msgstr ""
+
+#. Text in echo
+#: academy/template-certificate.php:17
+msgid "Print Certificate"
+msgstr ""
+
+#. Text in echo
+#: academy/woocommerce/checkout/form-checkout.php:47
+#: academy/woocommerce/checkout/form-checkout.php:54
+msgid "Purchase Now"
+msgstr ""
+
+#. Text in echo
+#: academy/questions.php:4
+#: academy/single-course.php:20
+msgid "Questions"
+msgstr ""
+
+#. Text in echo
+#: academy/loop-post.php:21
+msgid "Read More"
+msgstr ""
+
+#. Text in function
+#: academy/framework/widgets/themex_comments_widget.php:1
+msgid "Recent Comments"
+msgstr ""
+
+#. Text in function
+#: academy/framework/widgets/themex_twitter_widget.php:1
+msgid "Recent Tweets"
+msgstr ""
+
+#. Text in echo
+#: academy/header.php:86
+#: academy/template-register.php:4
+#: academy/template-register.php:45
+msgid "Register"
+msgstr ""
+
+#. Text in echo
+#: academy/module-related.php:2
+msgid "Related Courses"
+msgstr ""
+
+#. Text in function
+#: academy/framework/classes/themex.widgetiser.php:1
+msgid "Remove Sidebar"
+msgstr ""
+
+#. Text in echo
+#: academy/template-register.php:34
+msgid "Repeat Password"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/admin/layout.php:15
+msgid "Reset Options"
+msgstr ""
+
+#. Text in echo
+#: academy/header.php:76
+msgid "Reset Password"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:77
+#: academy/framework/admin/layout.php:4
+#: academy/framework/admin/layout.php:16
+msgid "Save Changes"
+msgstr ""
+
+#. Text in function
+#: academy/framework/widgets/themex_authors_widget.php:1
+msgid "Selected blog authors"
+msgstr ""
+
+#. Text in function
+#: academy/framework/classes/themex.widgetiser.php:1
+msgid "Sidebar Name"
+msgstr ""
+
+#. Text in echo
+#: academy/header.php:38
+#: academy/header.php:49
+#: academy/template-register.php:56
+#: academy/template-register.php:67
+msgid "Sign In"
+msgstr ""
+
+#. Text in echo
+#: academy/header.php:28
+msgid "Sign Out"
+msgstr ""
+
+#. Text in echo
+#: academy/header.php:54
+#: academy/template-register.php:69
+msgid "Sign in with Facebook"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:30
+msgid "Signature"
+msgstr ""
+
+#. Text in echo
+#: academy/index.php:29
+msgid "Sorry, no posts matched your search. Try again with some different keywords."
+msgstr ""
+
+#. Text in echo
+#: academy/module-statistics.php:2
+msgid "Statistics"
+msgstr ""
+
+#. Text in echo
+#: academy/module-statistics.php:100
+#: academy/module-users.php:4
+msgid "Students"
+msgstr ""
+
+#. Text in echo
+#: academy/single-plan.php:12
+#: academy/module-form.php:6
+#: academy/loop-plan.php:17
+msgid "Subscribe Now"
+msgstr ""
+
+#. Text in echo
+#: academy/single-course.php:35
+msgid "Subscribe to view this content"
+msgstr ""
+
+#. Text in echo
+#: academy/module-form.php:10
+msgid "Take This Course"
+msgstr ""
+
+#. Text in echo
+#: academy/sidebar-lesson.php:13
+msgid "Take the Quiz"
+msgstr ""
+
+#. Text in echo
+#: academy/single-course.php:33
+msgid "Take the course to view this content"
+msgstr ""
+
+#. Text in function
+#: academy/framework/widgets/themex_comments_widget.php:1
+msgid "The most recent comments"
+msgstr ""
+
+#. Text in function
+#: academy/framework/widgets/themex_twitter_widget.php:1
+msgid "The most recent tweets"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/admin/layout.php:3
+msgid "Theme Options"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/widgets/themex_twitter_widget.php:74
+#: academy/framework/widgets/themex_comments_widget.php:68
+#: academy/framework/widgets/themex_authors_widget.php:83
+msgid "Title"
+msgstr ""
+
+#. Text in echo
+#: academy/module-statistics.php:103
+msgid "Total"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:51
+msgid "Tumblr"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/widgets/themex_twitter_widget.php:82
+msgid "Tweets Number"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:40
+msgid "Twitter"
+msgstr ""
+
+#. Text in echo
+#: academy/module-player.php:40
+msgid "Unmute"
+msgstr ""
+
+#. Text in echo
+#: academy/module-form.php:17
+msgid "Unsubscribe Now"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:10
+msgid "Upload"
+msgstr ""
+
+#. Text in echo
+#: academy/header.php:43
+#: academy/module-statistics.php:50
+#: academy/template-register.php:18
+#: academy/template-register.php:62
+msgid "Username"
+msgstr ""
+
+#. Text in echo
+#: academy/module-form.php:21
+msgid "View Certificate"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:73
+msgid "Vimeo"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/widgets/themex_twitter_widget.php:78
+msgid "Widget ID"
+msgstr ""
+
+#. Text in echo
+#: academy/author.php:68
+msgid "YouTube"
+msgstr ""
+
+#. Text in echo
+#: academy/template-register.php:11
+msgid "Your account is activated! Feel free to sign in now."
+msgstr ""
+
+#. Text in function
+#: academy/woocommerce/checkout/thankyou.php:27
+msgid "again or go to your account page."
+msgstr ""
+
+#. Text in echo
+#: academy/loop-post.php:27
+#: academy/single.php:37
+msgid "by"
+msgstr ""
+
+#. Text in echo
+#: academy/single.php:39
+msgid "in"
+msgstr ""
+
+#. Text in function
+#: academy/framework/widgets/themex_comments_widget.php:1
+msgid "on"
+msgstr ""

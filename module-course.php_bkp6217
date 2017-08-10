@@ -1,0 +1,110 @@
+<?php the_post(); ?>
+
+<?php ThemexCourse::initCourse($post->ID); 
+
+
+
+    $video_page_id = get_post_meta($post->ID, 'video_page_id');
+
+    $preview_lightbox = get_post_meta($post->ID, 'preview_lightbox');
+
+?>
+
+<div class="tp"></div>
+
+<?php if(!empty($video_page_id[0])){?>
+
+<div class="fivehalfcol column">
+
+<?php //get_template_part('loop','course'); ?>
+
+
+
+<?php
+
+        
+
+        $mypost = get_post($video_page_id[0]);
+
+        
+
+        echo do_shortcode($mypost->post_content);
+
+?>    
+
+</div>
+
+<?php } else {?>
+
+
+
+<div class="fivehalfcol column">
+
+    <?php //preview_lightbox(); 
+
+    
+
+        echo do_shortcode($preview_lightbox[0]);
+
+  
+
+    ?>
+
+</div>
+
+<?php }?>
+
+<?php if(ThemexCourse::hasMembers()) { ?>
+
+<div class="fivehalfcol column">
+
+<?php } else { ?>
+
+<!--<div class="ninecol column last">-->
+
+<div class="sixcol column">
+
+<?php } ?>
+
+	<div class="course-description widget <?php echo ThemexCourse::$data['course']['status']; ?>-course">
+
+		<div class="widget-title"><div class="headertitle"><?php the_title(); ?></div></div>
+
+		<div class="widget-content">
+
+			<?php the_content(); ?>	</div>
+
+		<div class="course-preview">
+
+			<footer class="course-footer clearfix">
+
+			<?php if(ThemexCourse::$data['users_number']!='true') { ?>        
+
+           	 	<div class="course-users left">
+
+			<?php if ($post->ID == 230) {echo "3,731 learners";} ?> 
+
+			<?php if ($post->ID == 222) {echo "2,836 learners";}?> 
+
+			<?php if ($post->ID == 233){echo "2,567 learners";}?>
+
+                        <?php if ($post->ID == 4424){echo "988 learners";}?>
+ 			
+                        <?php if ($post->ID == 5063){echo "424 learners";}?>
+
+			<?php if ($post->ID == 5421){echo "284 learners";}?>
+				  
+
+			</div></div>			
+
+            	<?php } ?>
+
+		<?php //get_template_part('module', 'form'); ?>
+
+		</footer>						
+
+			
+
+	</div>
+
+</div>

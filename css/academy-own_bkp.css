@@ -1,0 +1,118 @@
+body{font-family: 'Nunito', sans-serif!important;}
+.menu {
+    margin-top: 30px;
+}
+.tp-caption.rev-btn.rs-hover-ready {
+    background: #f9a03f!important;
+}
+.tp-caption.rev-btn.rs-hover-ready a {
+    color: #fff!important;
+	font-weight:800;
+	font-size:15px !important;
+}
+.tp-caption.tp-shape.tp-shapewrapper.tp-resizeme {
+    background: #20b9ff none repeat scroll 0 0!important;
+}
+.header-navigation div > ul > li:last-child {
+    background: #20b9ff none repeat scroll 0 0;
+    border-radius: 20px;
+    padding-bottom: 0;
+}
+.header-navigation div > ul > li:last-child a {
+    color:#fff;
+}
+.banner-bottom li {
+    display: inline-block;
+    list-style: outside none none;
+    padding: 0 50px;
+    width: auto;
+}
+.banner-bottom > ul {
+    float: none;
+    text-align: center;
+}
+.div-botm-img {
+    float: left;
+}
+.rank-dv{
+    float: left;
+    margin-left: 15px;
+    margin-top: 8px;
+    text-align: left;
+}
+.banner-bottom {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px #dddddd;
+    margin-top: -135px;
+    padding: 20px 0;
+}
+.section-hdg {
+    text-align: center;
+	font-family: 'Nunito', sans-serif !important;
+	margin:50px 0px;
+}
+.section-hdg > p {
+    color: #403737!important;
+    font-family: "Nunito",sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+.section-hdg h1 {
+    font-family: "Nunito",sans-serif;
+    font-size: 36px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+	color:#403737;
+}
+.border-new {
+    background: #20b9ff;
+    width: 70px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 12px auto 15px;
+}
+.spcl-img img{ width:100%;}
+.specl-div {
+    background: #f5f5f5 none repeat scroll 0 0;  padding:15px; margin-bottom: 50px;
+}
+.specl-div h3 {
+    color: #0b0909;
+    font-family: "Nunito",sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 8px;
+    text-align: center;
+	word-wrap: break-word;
+	font-weight: 600;
+}
+.specl-div p{ color: #353434;font-family: "Nunito",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+.see-more {
+    float: none;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.see-more > a {
+    background: #f9a03f none repeat scroll 0 0;
+    border: 1px solid #f58220;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 8px 34px;
+    box-shadow: 0px 1px 1px #888;
+}
+.see-more > a:hover{ color:#fff;}
+.view-full img {
+    margin: 0 auto;
+    text-align: center;
+    width: 160px;
+}
+.view-full {
+    text-align: center;
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="user-scalable = yes">
+    
+	<title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
+	
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="<?php echo THEME_URI; ?>js/html5.js"></script>
+	<![endif]-->
+	
+	<?php wp_head(); ?>
+    
+    <link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_directory').'/custom.css';?>">
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="<?php echo bloginfo('template_directory');?>/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="<?php echo bloginfo('template_directory');?>/fancybox/source/jquery.fancybox.pack.js" defer="defer"></script>
+    <script type="text/javascript" src="<?php echo bloginfo('template_directory');?>/fancybox/source/jquery.fancybox.js" defer="defer"></script>
+    
+    <script src="<?php echo bloginfo('template_directory');?>/custom_slider/jquery.bxslider.min.js"></script>
+    <script type="text/javascript">
+    
+        /*(function() {
+            var myscript = document.createElement('script');
+            myscript.type = 'text/javascript';
+            myscript.src = ('<?php //echo bloginfo('template_directory');?>/custom_slider/jquery.bxslider.min.js');
+            var s = document.getElementById('myscript');
+            s.parentNode.insertBefore(myscript, s);
+        })(); */
+
+        
+    </script>
+    
+    <link href="<?php echo bloginfo('template_directory');?>/custom_slider/jquery.bxslider.css" rel="stylesheet" />
+    
+    <script type="text/javascript">
+    
+        var $j = jQuery.noConflict(); 
+        $j(document).ready(function() {
+            
+            //$j(window).bind("scroll", function(){
+                
+                //$j('.header-wrap').css({"position":"fixed"});
+                //$j('.featured-content').css({"padding-top":"92px"});
+                //$j('.contact_form').css('top','127px');
+                /*$j('.featured-content').css({"padding-top":"78px"});*/
+                
+            //}); 
+            //$j('.featured-content').css({"padding-top":"92px"});
+            //$j('.contact_form').css('top','127px');
+            
+            
+            /*  for fancybox  */
+            $j(".fancybox").fancybox({ arrows : false });  
+            
+            
+            $j('.bxslider').bxSlider({
+                mode: 'vertical',
+                slideMargin: 5,
+                infiniteLoop: false,
+                hideControlOnEnd: true
+            });   
+                
+        });
+    
+    </script>
+<script type="text/javascript">
+var fb_param = {};
+fb_param.pixel_id = '6009643839431';
+fb_param.value = '0.00';
+fb_param.currency = 'USD';
+(function(){
+  var fpw = document.createElement('script');
+  fpw.async = true;
+  fpw.src = '//connect.facebook.net/en_US/fp.js';
+  var ref = document.getElementsByTagName('script')[0];
+  ref.parentNode.insertBefore(fpw, ref);
+})();
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6009643839431&amp;value=0&amp;currency=USD" /></noscript>
+</head>
+<body <?php body_class(); ?>>
+	<div class="site-wrap">
+		<div class="header-wrap">
+			<header class="site-header">
+				<div class="row">
+					<div class="site-logo left">
+					<?php ThemexStyler::siteLogo(); ?>
+					</div>
+					<!-- /logo -->
+					<div class="header-options right clearfix">					
+						
+                        <!--<div class="login-options right">
+							<?php //if(ThemexUser::userActive()) { ?>
+							<div class="button-wrap left">
+								<a href="<?php //echo wp_logout_url(SITE_URL); ?>" class="button dark">
+									<span><span class="button-icon logout"></span><?php //_e('Sign Out','academy'); ?></span>
+								</a>							
+							</div>
+							<div class="button-wrap left">
+								<a href="<?php //echo ThemexUser::$data['profile_page_url']; ?>" class="button">
+									<span><span class="button-icon register"></span><?php //_e('My Profile','academy'); ?></span>
+								</a>						
+							</div>							
+							<?php //} else { ?>						
+							<div class="button-wrap left tooltip login-button">
+								<a href="#" class="button dark"><span><span class="button-icon login"></span><?php //_e('Sign In','academy'); ?></span></a>
+								<div class="tooltip-wrap">
+									<div class="tooltip-text">
+										<form action="<?php //echo AJAX_URL; ?>" class="login-form popup-form" method="POST">
+											<div class="message"></div>
+											<div class="field-wrap"><input type="text" name="user_login" value="<?php //_e('Username','academy'); ?>" /></div>
+											<div class="field-wrap"><input type="password" name="user_password" value="<?php //_e('Password','academy'); ?>" /></div>
+											<input type="hidden" name="login_nonce" class="nonce" value="<?php //echo wp_create_nonce('login_nonce'); ?>" />
+											<input type="hidden" class="action" value="themex_login" />
+											<div class="button-wrap left nomargin">
+												<a href="#" class="button submit-button">
+													<span><?php //_e('Sign In','academy'); ?></span>
+												</a>
+											</div>
+											<?php //if(ThemexUser::getOption('facebook_login')=='true') { ?>											
+											<div class="button-wrap left">
+												<a href="#" title="<?php //_e('Sign in with Facebook','academy'); ?>" class="button facebook-button">
+													<span><span class="button-icon facebook"></span></span>
+												</a>
+											</div>
+											<?php //} ?>
+											<div class="button-wrap switch-button left">
+												<a href="#" class="button dark" title="<?php //_e('Password Recovery','academy'); ?>">
+													<span><span class="button-icon help"></span></span>
+												</a>
+											</div>					
+										</form>
+									</div>
+								</div>
+								<div class="tooltip-wrap password-form">
+									<div class="tooltip-text">
+										<form action="<?php //echo AJAX_URL; ?>" class="password-form popup-form" method="POST">
+											<div class="message"></div>
+											<div class="field-wrap"><input type="text" name="user_email" value="<?php //_e('Email','academy'); ?>" /></div>
+											<input type="hidden" name="password_nonce" class="nonce" value="<?php //echo wp_create_nonce('password_nonce'); ?>" />
+											<input type="hidden" class="action" value="themex_password" />
+											<div class="button-wrap left nomargin">
+												<a href="#" class="button submit-button">
+													<span><?php //_e('Reset Password','academy'); ?></span>
+												</a>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<?php //if(get_option('users_can_register')) { ?>
+							<div class="button-wrap left">
+								<a href="<?php //echo ThemexUser::$data['register_page_url']; ?>" class="button">
+									<span><span class="button-icon register"></span><?php //_e('Register','academy'); ?></span>
+								</a>
+							</div>
+							<?php //} ?>
+							<?php //} ?>
+						</div>-->
+                        
+						<!-- /login options -->										
+						<!--<div class="search-form right">
+							<?php //get_search_form(); ?>
+						</div>-->
+						<!-- /search form -->
+						<?php if($share_code=ThemexCore::getOption('share_code')) { ?>
+						<div class="button-wrap share-button tooltip right">
+							<a href="#" class="button dark"><span><span class="button-icon plus nomargin"></span></span></a>
+							<div class="tooltip-wrap">
+								<div class="corner"></div>
+								<div class="tooltip-text"><?php echo themex_html($share_code); ?></div>
+							</div>
+						</div>
+						<!-- /share button -->
+						<?php } ?>
+					</div>
+					<!-- /header options -->
+					<div class="mobile-search-form">
+						<?php get_search_form(); ?>
+					</div>
+					<!-- /mobile search form -->
+                    
+
+                    
+                    <!-- social icons -->
+                    <div class="twocol right">
+                    <div class="social_icons">
+                        <?php //echo custom_like_buttons();?>
+                        
+                <!--<div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                <div class="fb-like" data-href="http://demo.webreinvent.com/edvancer/" data-send="true" data-width="450" data-show-faces="true"></div>-->
+                        
+                        <!-- AddThis Button BEGIN -->
+                        <!--<div class="addthis_toolbox addthis_default_style">
+                            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                            <a class="addthis_button_tweet"></a>
+                            <a class="addthis_button_linkedin_counter"></a>
+                            <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+                            <a class="addthis_counter addthis_pill_style"></a>
+                        </div>
+                        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js" defer="defer"></script>-->
+                        <!-- AddThis Button END -->
+                        
+                        <a href="<?php echo $student_signin_url=ThemexCore::getOption('fb_url');?>">
+                            <img src="<?php echo site_url();?>/wp-content/uploads/2013/07/facebook_icon_by_x_1337_x-d5ikwkm.png" width="26" height="26" />
+                        </a>
+                        <a href="<?php echo $student_signin_url=ThemexCore::getOption('tw_url');?>">
+                            <img src="<?php echo site_url();?>/wp-content/uploads/2013/07/728567main_twitter-icon.png" width="26" height="26" />
+                        </a>
+                        <a href="<?php echo $student_signin_url=ThemexCore::getOption('link_url');?>">
+                            <img src="<?php echo site_url();?>/wp-content/uploads/2013/07/linkedin-logo.png" width="26" height="26" />
+                        </a>
+                        <a href="<?php echo $student_signin_url=ThemexCore::getOption('google_url');?>">
+                            <img src="<?php echo site_url();?>/wp-content/uploads/2013/07/google.jpg" width="26" height="26" />
+                        </a>
+                        
+                    </div>
+                    </div>
+                    <!-- /social icons  -->
+                    
+                                        <div class="fourcol right">
+                    <div class="signin">
+                        <a class="button new" target="_blank" href="<?php echo $student_signin_url=ThemexCore::getOption('student_signin_url');?>"><span class="wid">Student sign in</span></a>
+                        <a class="button new" target="_blank" href="<?php echo $admin_signin_url=ThemexCore::getOption('admin_signin_url');?>"><span class="wid">Faculty/Admin sign in</span></a>
+                    </div>
+                    </div>
+                    
+                           
+                    <br clear="all"/>
+					<nav class="header-navigation right">
+						<?php wp_nav_menu( array( 'theme_location' => 'main_menu','container_class' => 'menu' ) ); ?>						
+						<div class="select-menu">
+							<?php ThemexInterface::renderDropdownMenu('main_menu'); ?>
+							<span>&nbsp;</span>
+						</div><!--/ select menu-->
+					</nav>
+					<!-- /navigation -->						
+				</div>			
+			</header>
+			<!-- /header -->
+		</div>
+		<div class="featured-content">
+			<?php 
+			ThemexStyler::pageBackground();
+			if(is_front_page() && !ThemexUser::isLoginPage()) {
+				get_template_part('module','slider');
+			} else {
+			?>
+			<div class="row">
+			<?php
+			if(get_post_type()=='course' && is_single()) {
+				get_template_part('module','course');
+			} else {
+			?>
+			<div class="page-title">
+				<h1 class="nomargin"><?php ThemexStyler::pageTitle(); ?></h1>
+                
+                <?php if(is_category(11)){?>
+
+                        <?php 
+                            $img_src = categoryCustomFields_GetCategoryCustomField(11,'cat_img');  
+
+                        ?>
+                        <div class="column fivecol">
+                            <img src="<?php echo $img_src[0]->field_value;?>" alt="">
+                        </div>
+                        <div class="column  sevencol last" >
+                            <div class="employer-description widget employer">
+                                <div class="widget-title"><h4 class="nomargin">Hire pre-trained employees</h4></div>
+                                <div class="widget-content">
+                                    <?php echo category_description(); ?>
+                                    <footer class="course-footer">
+                                    </footer>            
+                                </div>                        
+                            </div>
+                            
+                        </div>
+                    
+                <?php } ?>
+                
+			</div>
+			<!-- /page title -->
+			<?php }	?>
+			</div>
+			<?php } ?>
+		</div>
+		<!-- /featured -->
+		<div class="main-content">
+			<div class="row">
